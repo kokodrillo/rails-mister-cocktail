@@ -1,0 +1,24 @@
+<div class="background">
+<div class="show">
+<div class= "show-container">
+<h1>Your cocktail: <div class="name"><%= @cocktail.name %></div></h1>
+<% @cocktail.doses.each do |dose| %>
+<ul>
+<li> <%= dose.description %> of <%= dose.ingredient.name %></li>
+</ul>
+<% end %>
+
+ <p>Create new doses for your cocktail</p>
+
+    <%= link_to new_cocktail_dose_path(@cocktail) do %>
+    <div class="btn btn-flat">New dose</div>
+    <% end %>
+     <br>
+ <div class="button">
+     <%= link_to cocktails_path do %>
+    <div class="btn btn-gradient">Back</div>
+    <% end %>
+</div>
+</div>
+</div>
+</div>

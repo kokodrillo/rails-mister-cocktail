@@ -1,0 +1,12 @@
+<h1>Create your own doses here</h1>
+
+<%= simple_form_for [@cocktail, @dose] do |f| %>
+  <%= f.input :description %>
+   <%= f.association :ingredient %> <!-- getting all ingredients from schema -->
+    <div class="btn btn-flat"><%= f.submit %></div>
+<% end %>
+
+
+
+
+

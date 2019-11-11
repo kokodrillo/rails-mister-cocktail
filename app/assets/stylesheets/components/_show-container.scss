@@ -1,0 +1,36 @@
+.show{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 20px;
+    color:white;
+}
+
+h1{
+font-size: 20px;
+margin-top: 20px;
+
+}
+
+p{
+      margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.name{
+  color:#66e258;
+}
+
+.btn.btn-flat.button{
+  color:blue;
+}
+
+.background{
+  background-image: url('measurements.jpg');
+  height: 1000px;
+  background-size: cover;
+  justify-content: center;
+  text-shadow: 4px 1px 3px rgba(0,0,0,0.2);
+
+}
+

@@ -1,0 +1,29 @@
+#container1{
+  background-color: rgba(34,29,35, 0.7);
+  border-radius: 10px;
+  padding:20px;
+  margin-top:20px;
+  position: relative;
+  bottom: 700px;
+  width:50%;
+  margin: 0 auto;
+
+}
+
+h3{
+  color: white;
+}
+
+.image-new-cocktail {
+  background-image: url('making.jpg');
+  height: 900px;
+  background-size: cover;
+  justify-content: center;
+  text-shadow: 4px 1px 3px rgba(0,0,0,0.2);
+
+}
+
+.string.required{
+  font-size: 15px;
+}
+
