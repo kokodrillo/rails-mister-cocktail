@@ -36,62 +36,19 @@
 </div>
 
 <div class="container">
-<div class="cards">
-  <% @cocktails.each do |one_cocktail|  %>
-  <div class="card-product">
-    <img src="https://images.unsplash.com/photo-1546171753-97d7676e4602?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
-    <div class="card-product-infos">
-      <h2><%= link_to one_cocktail.name, cocktail_path(one_cocktail) %></h2>
-      <p id ="remove"><i class="fas fa-trash-alt"></i> <%=link_to 'Remove', one_cocktail, method: :delete, data: { confirm: 'Are you sure?'}%></p>
-      <p>Product description with <strong>relevant info</strong> only.</p>
-    </div>
+  <div class="cards">
+    <%= raise %>
+    <%= cards.each %>
+
+
   </div>
-  <% end %>
-  </div>
+
+
+
+
 </div>
 
-<!-- <div clas = "container1">
-<div class="card-product">
-  <img src="https://images.unsplash.com/photo-1546171753-97d7676e4602?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
-  <div class="card-product-infos">
 
-    <%#= link_to cocktail_path(@cocktail) do %>
-    <h2>Mojito</h2>
-    <%# end %>
 
-    <p>Product description with <strong>relevant info</strong> only.</p>
-  </div>
-</div>
-<div class="card-product">
-  <img src="https://images.unsplash.com/photo-1562708294-4df93280352d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
-  <div class="card-product-infos">
-    <h2>Blue Caracao</h2>
-    <p>Product description with <strong>relevant info</strong> only.</p>
-  </div>
-</div>
-</div> -->
-<!-- <div id = "container2">
-<div class="card-product">
-  <img src="https://images.unsplash.com/photo-1551734322-f43b0798585a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
-  <div class="card-product-infos">
-    <h2>Bloody Mary</h2>
-    <p>Product description with <strong>relevant info</strong> only.</p>
-  </div>
-</div>
-<div class="card-product">
-  <img src="https://images.unsplash.com/photo-1541975902628-b157a9411603?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
-  <div class="card-product-infos">
-    <h2>Old Fashioned</h2>
-    <p>Product description with <strong>relevant info</strong> only.</p>
-  </div>
-</div>
-</div> -->
 
-<div class="footer">
-  <div class="footer-links">
-    <a href="#"><i class="fab fa-github"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-facebook"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-    <a href="#"><i class="fab fa-linkedin"></i></a>
-  </div>
+</div>
