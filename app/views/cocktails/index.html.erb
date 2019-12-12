@@ -37,10 +37,14 @@
 
 <div class="container">
   <div class="cards">
-    <%= raise %>
-    <%= cards.each %>
 
-
+    <div class="buttons-card">
+      <% @cocktails.each do |cocktail| %>
+      <td><%= link_to cocktail.name, cocktail %></td>
+      <td><%= link_to cocktails_path(cocktail), method: :delete do %></td>
+        <i class="fas fa-trash-alt"></i>
+        <% end %>
+      <% end %>
   </div>
 
 
