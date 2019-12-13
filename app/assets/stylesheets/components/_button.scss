@@ -1,10 +1,46 @@
 .btn.btn-flat{
-background-color: #66e258;
+background-color: #f3f56e;
 border-radius: 10px;
 box-shadow: 4px 1px 3px rgba(0,0,0,0.2);
-color:white;
+color:#443d3d;
 font-size:15px;
+font-weight:bold;
 
+}
+
+.fa-cocktail{
+  color:#7BE56F;
+  position: relative;
+animation-name: shake;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in;
+cursor: pointer;
+}
+.fa-cocktail:hover{
+animation-name: shakeAnim;
+}
+
+@keyframes shakeAnim {
+  0% {left: 0}
+  1% {left: -3px}
+  2% {left: 5px}
+  3% {left: -8px}
+  4% {left: 8px}
+  5% {left: -5px}
+  6% {left: 3px}
+  7% {left: 0}
+}
+
+@keyframes shake {
+  0% {left: 0}
+  1% {left: -3px}
+  2% {left: 5px}
+  3% {left: -8px}
+  4% {left: 8px}
+  5% {left: -5px}
+  6% {left: 3px}
+  7% {left: 0}
 }
 
 
@@ -27,3 +63,8 @@ position: relative;
 left: 100%;
 bottom: 30px;
 }
+
+.fa-cocktail:before {
+    content: "";
+    font-size: 30px;
+  }
