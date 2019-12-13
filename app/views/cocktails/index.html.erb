@@ -1,3 +1,4 @@
+
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <%= link_to "#", class: "navbar-brand" do %>
   <% end %>
@@ -17,42 +18,49 @@
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
           <%= link_to "Action", "#", class: "dropdown-item" %>
           <%= link_to "Another action", "#", class: "dropdown-item" %>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1559443922-3f698a0ff27a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1569&q=80);">
+    <div class="container">
+          <h1 id="header">Fancy Cocktails</h1>
+          <br>
+          <p >Enter into the World of delicious cocktails!</p>
+          <p id="subtitle">Create your own, Shake it!</p>
+          <%= link_to new_cocktail_path do %>
+          <div ><i class="fas fa-cocktail"></i></div>
+          <% end %>
+    </div>
+  </div>
+
+
+
+
+<!-- <header>
+  <div class="overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="https://res.cloudinary.com/dfsvnv8pl/video/upload/v1576253792/cocktails/video-cocktails_d97a5d.mp4" type="video/mp4">
+  </video>
+  <div class="container h-100"> -->
+<div class="container-cards">
+
+ <% @cocktails.each do |one_cocktail| %>
+        <div class="card">
+          <h4><%= link_to one_cocktail.name, one_cocktail %></h4>
+          <br>
+          <h6>Description of the cocktail</h6>
+          <div id="removing-cocktail"><%= link_to 'delete', one_cocktail, method: :delete, data: { confirm: 'Are you sure?' } %></div>
         </div>
-      </li>
-    </ul>
-  </div>
-</div>
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1559443922-3f698a0ff27a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1569&q=80);">
-  <div class="container">
-    <h1 id="header">Fancy Cocktails</h1>
-    <br>
-    <p >Enter into the World of delicious cocktails!</p>
-    <p id="subtitle">Create your own and:</p>
-    <%= link_to new_cocktail_path do %>
-    <div class="btn btn-flat">Shake it!</div>
-    <% end %>
-
-  </div>
-</div>
-
-<div class="container">
-  <div class="cards">
-
-    <div class="buttons-card">
-      <% @cocktails.each do |cocktail| %>
-      <td><%= link_to cocktail.name, cocktail %></td>
-      <td><%= link_to cocktails_path(cocktail), method: :delete do %></td>
-        <i class="fas fa-trash-alt"></i>
         <% end %>
-      <% end %>
+
+  <!--   </div>
   </div>
+</header> -->
+
+    </div>
 
 
 
 
-</div>
-
-
-
-
-</div>

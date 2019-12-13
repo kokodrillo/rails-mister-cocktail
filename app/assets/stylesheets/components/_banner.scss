@@ -15,21 +15,22 @@
 }
 
 .banner p {
-  font-size: 15px;
+  font-size: 18px;
   color: white;
   opacity: .9;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   line-height: 10px;
+  margin-top: -0.2px;
 }
 
 
 #header{
-  font-family:'Allan', cursive;
-  font-size:50px;
+  font-family: 'Lobster', cursive;
+  font-size:55px;
   color:#7be56f;
 }
 
 #subtitle{
   opacity:100;
-  text-decoration: underline;
+  padding-bottom: 15px;
 }

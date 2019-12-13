@@ -21,9 +21,10 @@ class CocktailsController < ApplicationController
   end
 
   def destroy
+
     @cocktail = Cocktail.find(params[:id])
     @cocktail.destroy
-    redirect_to cocktails_path, notice: 'Cocktail was successfully destroyed.'#stay on index site
+    redirect_to cocktails_path
   end
 
   private
