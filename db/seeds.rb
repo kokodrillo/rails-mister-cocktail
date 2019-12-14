@@ -9,7 +9,32 @@ Dose.destroy_all
 Ingredient.destroy_all
 
 Ingredient.create(name: "lemon")
+Ingredient.create(name: "cherry")
+Ingredient.create(name: "orange")
+Ingredient.create(name: "pineapple")
+Ingredient.create(name: "apricot")
 Ingredient.create(name: "ice")
+
 Ingredient.create(name: "mint leaves")
+Ingredient.create(name: "cellery")
+
 Ingredient.create(name: "vodka")
 Ingredient.create(name: "tequila")
+Ingredient.create(name: "champagne")
+Ingredient.create(name: "whiskey")
+Ingredient.create(name: "campari")
+Ingredient.create(name: "blue caracao")
+
+Ingredient.create(name: "sparkling water")
+Ingredient.create(name: "water")
+Ingredient.create(name: "orange juice")
+Ingredient.create(name: "lemon juice")
+Ingredient.create(name: "pineapple juice")
+Ingredient.create(name: "apricot juice")
+Ingredient.create(name: "apple juice")
+
+Ingredient.create(name: "sugar cane sirup")
+Ingredient.create(name: "sugar")
+Ingredient.create(name: "salt")
+Ingredient.create(name: "cinnamon")
+
