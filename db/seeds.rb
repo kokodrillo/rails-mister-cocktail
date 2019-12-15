@@ -38,3 +38,5 @@ Ingredient.create(name: "sugar")
 Ingredient.create(name: "salt")
 Ingredient.create(name: "cinnamon")
 
+
+

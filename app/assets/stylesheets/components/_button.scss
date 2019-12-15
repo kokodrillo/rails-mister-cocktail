@@ -9,8 +9,8 @@ font-weight:bold;
 }
 
 .fa-cocktail{
-  color:#7BE56F;
-  position: relative;
+color:#7BE56F;
+position: relative;
 animation-name: shake;
 animation-duration: 5s;
 animation-iteration-count: infinite;
@@ -49,9 +49,15 @@ background-color: #66e258;
 border-radius: 10px;
 box-shadow: 4px 1px 3px rgba(0,0,0,0.2);
 color:white;
-border: none;
-font-size:15px;
+border-color:#66e258;
+font-size:18px;
 }
+
+.btn.btn-primary:hover{
+  color:#495057;
+  border-color:none;
+}
+
 
 .btn.btn-gradient{
 background-color: #a3c1e5;
@@ -69,3 +75,12 @@ bottom: 30px;
     font-size: 30px;
     text-shadow: 2px 2px #dc5311;
   }
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color:#66e258;
+    border-color:#66e258;
+}
+
+
+

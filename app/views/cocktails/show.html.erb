@@ -2,6 +2,7 @@
 <div class="show">
 <div class= "show-container">
 <h1>Your cocktail: <div class="name"><%= @cocktail.name %></div></h1>
+
 <% @cocktail.doses.each do |dose| %>
 <ul>
 <li> <%= dose.description %> of <%= dose.ingredient.name %></li>
