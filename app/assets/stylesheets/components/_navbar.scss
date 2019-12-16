@@ -9,14 +9,25 @@
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.navbar-lewagon img {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  left: 20px;
 }
 
-.nav-link{
+.navbar-nav.mr-auto a{
+  color: #ef6f31 !important;
+  font-size:20px;
+  position: relative;
+  right: 60%;
+
+}
+
+.navbar-nav.mr-auto a:hover{
   color: white !important;
+  text-decoration: none !important;
 }
 
-.nav-link{
-  color: #8f8183 !important;
-}
+
+
