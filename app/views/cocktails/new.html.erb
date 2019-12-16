@@ -1,19 +1,14 @@
 <div class="image-new-cocktail" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dfsvnv8pl/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1576326690/cocktails/pouring-cocktail-unsplash_mf5rq9.jpg);">
-    <div class="container">
-
-    </div>
-
   <div id="container1" >
     <div class="add-form">
       <div class="wraper">
-  <%= simple_form_for @cocktail do |f| %>
-    <h3><%= f.input :name %></h3>
-    <h3><%= f.input :description %></h3>
-    <%= f.submit "add a cocktail", class: "btn btn-primary" %>
-
-  <% end %>
-</div>
+        <%= simple_form_for @cocktail do |f| %>
+        <h3><%= f.input :name %></h3>
+        <h3><%= f.text_area :description, size: 200, placeholder:"200 characters maximum"%></h3>
+        <%= f.submit "add a cocktail", class: "btn btn-primary" %>
+        <% end %>
+      </div>
     </div>
+  </div>
 </div>
-</div>
-</div>
+
