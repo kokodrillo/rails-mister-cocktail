@@ -1,64 +1,36 @@
-
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <%= link_to "#", class: "navbar-brand" do %>
-  <% end %>
-
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <%= link_to "Home", "#", class: "nav-link" %>
-      </li>
-      <li class="nav-item">
-        <%= link_to "New", "#", class: "nav-link" %>
-      </li>
-      <li class="nav-item dropdown">
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-          <%= link_to "Action", "#", class: "dropdown-item" %>
-          <%= link_to "Another action", "#", class: "dropdown-item" %>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1559443922-3f698a0ff27a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1569&q=80);">
-    <div class="container">
-          <h1 id="header">Fancy Cocktails</h1>
-          <br>
-          <p >Enter into the World of delicious cocktails!</p>
-          <p id="subtitle">Create your own, <strong>Shake it!</strong></p>
-          <%= link_to new_cocktail_path do %>
-          <div ><i class="fas fa-cocktail"></i></div>
-          <% end %>
-    </div>
-  </div>
-
-
-
-
-<!-- <header>
+<header>
   <div class="overlay"></div>
   <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-    <source src="https://res.cloudinary.com/dfsvnv8pl/video/upload/v1576253792/cocktails/video-cocktails_d97a5d.mp4" type="video/mp4">
+    <source src="https://res.cloudinary.com/dfsvnv8pl/video/upload/e_reverse/v1576497369/cocktails/martini_sutbie.mp4">
   </video>
-  <div class="container h-100"> -->
+  <div class="container h-100">
+    <div class="d-flex h-100 text-center align-items-center">
+    <div class="banner">
+      <h1 id="header">Fancy Cocktails</h1>
+          <br>
+          <div class="subtext">
+            <p>Enter into the World of delicious cocktails!</p>
+            <p>Create your own</p>
+            <%= link_to new_cocktail_path do %>
+            <div class="btn btn-flat">Shake it!</div>
+            <% end %>
+          </div>
+        </div>
+    </div>
+  </div>
+</header>
+  <div class="container h-100">
 <div class="container-cards">
 
  <% @cocktails.each do |one_cocktail| %>
         <div class="card">
           <h4><%= link_to one_cocktail.name, one_cocktail %></h4>
+          <h5><%=  one_cocktail.description%></h5>
           <br>
-          <h6>Description of the cocktail</h6>
+
           <div id="removing-cocktail"><%= link_to 'delete', one_cocktail, method: :delete, data: { confirm: 'Are you sure?' } %></div>
         </div>
         <% end %>
-
-  <!--   </div>
-  </div>
-</header> -->
-
     </div>
 
 

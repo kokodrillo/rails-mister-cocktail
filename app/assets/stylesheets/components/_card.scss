@@ -4,29 +4,38 @@
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 8px;
     width: 350px;
-    height: 150px;
+    max-height: 300px;
     padding:20px;
     box-shadow: 0px 0.9px 7px 1px #504b4c;
     margin: 0 auto;
 }
 
-
-
 .card h4 a{
   font-family: "Lobster";
   letter-spacing: 1.2px;
-  color:white;
+  color: #ec6a2a;
+  text-shadow: 2px 2px #524e4e;
 }
+.card h4 a:hover{
+  color: white;
+}
+
 .card a{
   color:#505052;
 }
 
+.card h5{
+  color:#e6e6e6;
+  font-size: 16px;
+  padding-top: 15px;
+  padding-right: 20px;
+}
 .card h6{
       color:#92847e;
     }
 
 .card a:hover{
-  color:#7BE56F;
+  color:white;
   text-decoration:none;
 }
 

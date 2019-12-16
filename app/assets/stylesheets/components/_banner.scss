@@ -24,14 +24,77 @@
 }
 
 
-#header{
+#header {
   font-family: 'Lobster', cursive;
-  font-size:55px;
-  color:#7be56f;
+  font-size: 70px;
+  color: #221d23;
   text-shadow: 2px 2px #dc5311;
+    /* margin: 10px 50px; */
+  position: relative;
+  left: 50%;
 }
 
-#subtitle{
-  opacity:100;
-  padding-bottom: 15px;
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: 1;
 }
+
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://res.cloudinary.com/dfsvnv8pl/video/upload/v1576497369/cocktails/martini_sutbie.mp4') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
+
+.subtext{
+  position: relative;
+  left: 80%;
+  p{
+    color: #221d23;
+    font-size: 25px;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    left: -30%;
+    text-shadow: 2px 2px #b3afaf;
+
+  }
+
+}
+
