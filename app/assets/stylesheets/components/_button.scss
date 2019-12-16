@@ -1,23 +1,26 @@
 .btn.btn-flat{
-background-color: #f3f56e;
+background-color:#da6329;
 border-radius: 10px;
 box-shadow: 4px 1px 3px rgba(0,0,0,0.2);
-color:#443d3d;
+color:white;
 font-size:15px;
-font-weight:bold;
-
-}
-
-.fa-cocktail{
-  color:#7BE56F;
-  position: relative;
+position: relative;
 animation-name: shake;
 animation-duration: 5s;
 animation-iteration-count: infinite;
 animation-timing-function: ease-in;
 cursor: pointer;
+margin-left: -340px;
+box-shadow: 1px 4px 9px #585555;
 }
-.fa-cocktail:hover{
+
+.btn.btn-flat:before {
+  font-size: 30px;
+  text-shadow: 2px 2px #dc5311;
+  }
+
+
+.btn.btn-flat:hover{
 animation-name: shakeAnim;
 }
 
@@ -43,7 +46,6 @@ animation-name: shakeAnim;
   7% {left: 0}
 }
 
-
 .btn.btn-primary{
 background-color: #66e258;
 border-radius: 10px;
@@ -54,18 +56,14 @@ font-size:15px;
 }
 
 .btn.btn-gradient{
-background-color: #a3c1e5;
+background-color: #656564;
 border-radius: 10px;
 box-shadow: 4px 1px 3px rgba(0,0,0,0.2);
 color:white;
 font-size:15px;
 position: relative;
-left: 100%;
+left: 85%;
 bottom: 30px;
 }
 
-.fa-cocktail:before {
-    content: "";
-    font-size: 30px;
-    text-shadow: 2px 2px #dc5311;
-  }
+

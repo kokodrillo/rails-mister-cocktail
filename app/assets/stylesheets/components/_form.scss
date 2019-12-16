@@ -1,5 +1,4 @@
 #container1{
-  background-color: rgba(34,29,35, 0.7);
   border-radius: 10px;
   padding:20px;
   margin-top:20px;
@@ -7,7 +6,6 @@
   bottom: 700px;
   width:50%;
   margin: 0 auto;
-
 }
 
 h3{
@@ -15,15 +13,62 @@ h3{
 }
 
 .image-new-cocktail {
-  background-image: url('making.jpg');
-  height: 2000px;
   background-size: cover;
-  justify-content: center;
-  text-shadow: 4px 1px 3px rgba(0,0,0,0.2);
+  height: 600px;
 
 }
 
-.string.required{
-  font-size: 15px;
+.image-new-dose {
+  background-size: cover;
+  height: 600px;
+  display: flex;
+
+}
+label .string.required{
+    font-size: 18px;
+    color: white;
 }
 
+.add-form{
+  margin-top:900px;
+  width:400px;
+  height:70px;
+}
+.wraper{
+  background-color: #221d23;
+  width: 500px;
+  padding: 30px;
+  border-radius: 5px;
+  opacity: 70%;
+}
+
+label{
+  font-size:18px;
+}
+
+.dose-form{
+  font-size: 18px;
+  color: white;
+  background-color: #221d23;
+  width: 500px;
+  padding: 30px;
+  border-radius: 5px;
+  margin: 100px auto;
+  box-shadow: 1px 1px 10px #888888;
+}
+
+.select-doses-form {
+    font-size: 18px;
+    color: white;
+    background-color: #221d23;
+    width: 500px;
+    padding: 30px;
+    margin: 0 auto;
+    box-shadow: 1px 1px 10px #888888;
+    max-height: 800px;
+    min-height: 500px;
+    opacity:80%;
+  .name{
+    margin:10px;
+  }
+}

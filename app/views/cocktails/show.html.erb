@@ -1,24 +1,23 @@
-<div class="background">
-<div class="show">
-<div class= "show-container">
-<h1>Your cocktail: <div class="name"><%= @cocktail.name %></div></h1>
-<% @cocktail.doses.each do |dose| %>
-<ul>
-<li> <%= dose.description %> of <%= dose.ingredient.name %></li>
-</ul>
-<% end %>
+<div class="image-new-dose"style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dfsvnv8pl/image/upload/v1576326304/cocktails/cocktail_ingredients-unsplash_udxyfq.jpg);">
+  <div class="select-doses-form">
+    <h1>Your cocktail:<div class="name"><%= @cocktail.name %></div></h1>
+      <% @cocktail.doses.each do |dose| %>
+      <ul>
+      <li> <%= dose.description %> of <%= dose.ingredient.name %></li>
+      </ul>
+      <% end %>
 
- <p>Create new doses for your cocktail</p>
+      <%= link_to new_cocktail_dose_path(@cocktail) do %>
+      <div class="btn btn-flat">New dose</div>
+      <% end %>
+       <br>
+        <div class="button">
+           <%= link_to cocktails_path do %>
+          <div class="btn btn-gradient">Back</div>
+          <% end %>
+        </div>
+      </div>
+  </div>
+</div>
 
-    <%= link_to new_cocktail_dose_path(@cocktail) do %>
-    <div class="btn btn-flat">New dose</div>
-    <% end %>
-     <br>
- <div class="button">
-     <%= link_to cocktails_path do %>
-    <div class="btn btn-gradient">Back</div>
-    <% end %>
-</div>
-</div>
-</div>
-</div>
+
