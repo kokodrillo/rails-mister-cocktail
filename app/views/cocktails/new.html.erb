@@ -5,6 +5,12 @@
         <%= simple_form_for @cocktail do |f| %>
         <h3><%= f.input :name %></h3>
         <h3><%= f.text_area :description, size: 200, placeholder:"200 characters maximum"%></h3>
+
+        <div class="photo-field">
+          <%= f.label "Upload your cocktail image here"%>
+          <%= f.file_field :image %>
+        </div>
+
         <%= f.submit "add a cocktail", class: "btn btn-primary" %>
         <% end %>
       </div>
