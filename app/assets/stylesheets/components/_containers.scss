@@ -1,2 +1,27 @@
+.container {
+  width: 100%;
+  /* padding-right: 15px; */
+  /* padding-left: 15px; */
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  padding-top: 50px;
+  background-color: #221d23;
+}
+
+.container-cards img{
+  margin: auto;
+  max-width: 400px;
+  max-height: 170px;
+  min-width: 200px;
+  min-height: 170px;
+  padding-top: 20px;
+  opacity: 80%;
+}
 
 

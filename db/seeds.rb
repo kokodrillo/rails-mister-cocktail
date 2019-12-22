@@ -31,6 +31,7 @@ Ingredient.create(name: "white wine")
 Ingredient.create(name: "red wine")
 Ingredient.create(name: "brandy")
 Ingredient.create(name:"Grand Marnier")
+Ingredient.create(name:"Triple sec")
 
 Ingredient.create(name: "sparkling water")
 Ingredient.create(name: "water")
@@ -40,6 +41,8 @@ Ingredient.create(name: "pineapple juice")
 Ingredient.create(name: "apricot juice")
 Ingredient.create(name: "apple juice")
 Ingredient.create(name: "tomato juice")
+Ingredient.create(name: "cranberry juice")
+
 
 Ingredient.create(name: "sugar cane sirup")
 Ingredient.create(name: "sugar")

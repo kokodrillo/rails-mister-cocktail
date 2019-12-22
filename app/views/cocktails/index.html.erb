@@ -25,10 +25,15 @@
  <% @cocktails.each do |one_cocktail| %>
         <div class="card">
           <h4><%= link_to one_cocktail.name, one_cocktail %></h4>
-          <h5><%=  one_cocktail.description%></h5>
+          <h5><%= one_cocktail.description %></h5>
+          <div class="image-cocktail">
+            <% if one_cocktail.image.attached? %>
+            <%= image_tag one_cocktail.image %>
+            <% end %>
+          </div>
           <br>
 
-          <div id="removing-cocktail"><%= link_to 'delete', one_cocktail, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+          <div><%= link_to 'delete', one_cocktail, method: :delete, data: { confirm: 'Are you sure?' } %></div>
         </div>
         <% end %>
     </div>
