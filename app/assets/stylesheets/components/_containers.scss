@@ -23,5 +23,14 @@
   padding-top: 20px;
   opacity: 80%;
 }
+ .wraper{
+  .btn-primary{
+    margin-top: 20px;
+  }
+ }
 
-
+input#cocktail_image{
+  overflow: visible;
+  background-color: #2d7332;
+  border-radius: 5px;
+}
