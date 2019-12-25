@@ -15,13 +15,22 @@
 }
 
 .container-cards img{
-  margin: auto;
-  max-width: 400px;
+  max-width: 310px;
   max-height: 170px;
   min-width: 200px;
   min-height: 170px;
-  padding-top: 20px;
   opacity: 80%;
+  border-radius: 5px;
+  margin-top: 10px;
 }
+ .wraper{
+  .btn-primary{
+    margin-top: 20px;
+  }
+ }
 
-
+input#cocktail_image{
+  overflow: visible;
+  background-color: #2d7332;
+  border-radius: 5px;
+}
